@@ -33,11 +33,11 @@ let transactions = [];
 let balance = 0
 let editing_id = -1;
 
-currencySymbol = window.localStorage.getItem("currencySymbol") || window.prompt("Enter the currency you use:")
 
 balance = Number(window.localStorage.getItem("balance")) || 0;
 transactions = JSON.parse(window.localStorage.getItem("transactions")) || [];
 console.log(transactions)  
+/*currencySymbol = window.localStorage.getItem("currencySymbol") || window.prompt("Enter the currency you use:")*/
 
 const save_Data = () => {
     window.localStorage.setItem("currencySymbol", currencySymbol);
